@@ -23,7 +23,7 @@ Run worker:
 go run worker/main.go
 ```
 
-Execute two Workflows, one which will succesfully run an Update and one where the Update will fail validation.
+Execute two Workflows and then send Updates for them. The first will fail validation and the second will succeed.
 
 ```shell
 go run democli/main.go update

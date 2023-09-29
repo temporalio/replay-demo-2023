@@ -1,6 +1,6 @@
 # Replay Demo
 
-Presented by @yiminc at Replay 2023. Code written by @yiminc and @Alex-Tideman.
+Presented by @yiminc at Replay 2023. Code by @yiminc and @Alex-Tideman.
 
 ## Setup server locally using single binary:
 ```shell
@@ -22,9 +22,16 @@ Run worker:
 ```shell
 go run worker/main.go
 ```
+
+Execute two Workflows, one which will succesfully run an Update and one where the Update will fail validation.
+
 ```shell
 go run democli/main.go update
 ```
+
+You can take a look at the Workflow Histories in the Temporal Web UI, or use the `temporal` command line tool:
+
+![Screenshot of temporal workflow trace commands, showing a summary histories for the demo workflows](./screenshot.png)
 
 ### Part 2: Schedules
 

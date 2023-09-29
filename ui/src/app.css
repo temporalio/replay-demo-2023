@@ -1,0 +1,30 @@
+@import '@fontsource/cooper-hewitt';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  *,
+  html,
+  body {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Cooper Hewitt';
+    position: relative;
+    overscroll-behavior: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  titles,
+  labels {
+    font-family: theme('fontFamily.secondary');
+  }
+}
